@@ -1,4 +1,3 @@
-
 services:
   postgres:
     image: postgres:15
@@ -15,7 +14,7 @@ services:
     image: dpage/pgadmin4:latest
     container_name: pgadmin_suci_ramadhani
     restart: unless-stopped
-       environment:
+    environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
